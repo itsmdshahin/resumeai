@@ -4,6 +4,7 @@ import CreateResume from './components/CreateResume';
 import DownloadResume from './components/DownloadResume';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
+import ResumeScreen from './components/ResumeScreen';
 
 const Stack = createStackNavigator();
 
@@ -13,6 +14,7 @@ export default function App() {
       <Stack.Navigator initialRouteName="CreateResume">
         <Stack.Screen name="CreateResume" component={CreateResume} />
         <Stack.Screen name="DownloadResume" component={DownloadResume} />
+        <Stack.Screen name="ResumeScreen" component={ResumeScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
